@@ -1,0 +1,65 @@
+<div class=container-fluid>
+
+    <div class="col-md-4 mt-5">
+        <div class="row">
+            <div class="col">
+                <input type="text" [(ngModel)]="searchByTitle" placeholder="searchByTitle" class=" form-control">
+
+            </div>
+            <div class="col">
+                <button class="btn btn-primary" (click)="searchByTitleData()">Search title</button>
+
+            </div>
+        </div>
+    </div><br>
+
+
+    <div class="col-md-4">
+        <div class="row">
+            <div class="col">
+                <input type="text" [(ngModel)]="searchById" placeholder="searchById" class="form-control">
+
+            </div>
+            <div class="col">
+                <button class="btn btn-primary" (click)="searchByIdData()">Search Id</button>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <br />
+    <br />
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <img [src]="apiData.Poster" alt="No poster" />
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="padding:75px;">
+                <p> <b>Title:</b> {{apiData.Title}}</p>
+
+
+                <p> <b>Plot:</b> {{apiData.Plot}} </p>
+
+                <p> <b>Director :</b>{{apiData.Director}}</p>
+                <p> <b>Actors:</b> {{apiData.Actors}}</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+</div>
